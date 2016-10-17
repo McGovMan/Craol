@@ -1,0 +1,251 @@
+/*
+ Theme Name:     CRAOL 
+ Description:    Custom WordPress Divi Child Theme for CRAOL.
+ Author:         Darragh Canning
+ Template:       Divi
+ Version:        1.0
+/*
+ 
+@import url("../Divi/css/style.css");
+ 
+/* = Child Theme Customization Starts Here
+------------------------------------------------------- */
+
+
+
+/* Laptops and desktops */
+@media only screen and ( min-width: 1100px ) { 
+a.et_pb_promo_button.et_pb_button{
+float: right;
+clear:both;
+margin-top:-11%!important; 
+}
+ 
+.et_pb_promo_description {
+width: 75%; /* edit as required */
+float:left;
+clear:right;
+}
+}
+
+/* = FOOTER STYLES
+------------------------------------------------------- */
+#footer-signup{ /* custom wodget area in footer*/
+	background: #faa91c;
+	height: 100px; /*temp height*/
+	color: #ffffff;
+}
+
+/* = HOME SECTION STYLES #home-sections
+------------------------------------------------------- */
+#home-sections .et_pb_blurb{
+	/*border-radius: 5px !important;*/
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+	box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+	transition-property: box-shadow;
+	transition-duration: 0.5s;
+  	transition-timing-function: linear;
+}
+
+#home-sections .et_pb_blurb:hover{
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(68,68,68,0.75);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(68,68,68,0.75);
+	box-shadow: 0px 0px 25px 0px rgba(68,68,68,0.75);
+}
+
+#home-sections .et_pb_blurb h4{
+	padding-top: 1rem;
+	font-size: 2rem;
+	color: #606060;
+}
+
+#home-sections .et_pb_blurb .et_pb_main_blurb_image{
+	background-color: #faa91c;
+}
+
+#home-sections .et_pb_blurb_position_left .et-pb-icon-circle, .et_pb_blurb_position_right .et-pb-icon-circle {	
+    font-size: 6rem;
+}
+/* = Typography Styles
+------------------------------------------------------- */
+.underlined-header{
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.underlined-header > h2{
+	border-bottom: 5px solid #faa91c !important;
+	font-size: 36px !important;
+	display: inline-block;
+	padding-bottom: 15px !important;
+}
+
+.underlined-header > h1{
+	border-bottom: 5px solid #faa91c !important;
+	font-size: 46px !important;
+	display: inline-block;
+	padding-bottom: 15px !important;
+}
+
+/* = Station Map
+------------------------------------------------------- */
+.acf-map {
+    width: 100%;
+    height: auto;
+    border: #ccc solid 1px;
+    margin: 0  0;
+}
+
+/* = Station Info
+------------------------------------------------------- */
+#station-info{
+	margin-top: -205px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+	box-shadow: 0px 0px 5px 0px rgba(68,68,68,0.5);
+}
+
+#station-info > .social-follow {
+	background-color: #faa81b;
+	padding: 7.5px 0 0 7.5px;
+}
+
+#station-info > .social-follow li a.icon::before{
+	color: #faa81b;
+	background-color: #ffffff;
+}
+
+#station-info > .et_pb_post_title h1{
+	padding: 0px 7.5px;
+	font-size: 1.5rem;
+}
+
+#station-info > .et_pb_blurb{
+	margin-bottom: 3.5% !important;
+}
+
+#station-info > .et_pb_code{
+	margin-bottom: 3.5%;
+
+}
+
+.et_pb_code .et-pb-icon {
+    font-size: 18px;
+}
+
+#station-info h4{
+	font-weight: normal;
+}
+
+#station-info > .et_pb_divider{
+	padding-bottom: 3.5%;
+}
+
+#station-info > .et_pb_cpt_text_0 p{
+	padding: 0px 7.5px;
+	font-size: inherit !important;
+	line-height: inherit;
+}
+
+#main-content {
+    background-color: transparent;
+}
+/* = Station Feeds
+------------------------------------------------------- */
+#station-feeds .et_pb_tabs ul li a{
+	color: #ffffff;
+	font-size: 1rem;
+}
+
+#station-feeds .et_pb_tabs .et_pb_tabs_controls li{
+	background-color: #faa81b;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    width: 25%; /* 4 tabs equally divided */
+}
+
+@media screen and (max-width: 768px) {
+    #station-feeds .et_pb_tabs .et_pb_tabs_controls li{
+         width: 100%; 
+    }
+}
+/* news tab */
+#station-feeds li.et_pb_tab_0{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol-news-25x20.png');
+}
+#station-feeds li.et_pb_tab_0.et_pb_tab_active{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol-news-dark-25x20.png');
+}
+
+/* events tab */
+#station-feeds li.et_pb_tab_1{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_calendar_20px.png');
+}
+#station-feeds li.et_pb_tab_1.et_pb_tab_active{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_calendar_dark_20px.png');
+}
+/* jobs tab */
+#station-feeds li.et_pb_tab_2{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_jobs_24px.png');
+}
+#station-feeds li.et_pb_tab_2.et_pb_tab_active{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_jobs_dark_24px.png');
+}
+/* share tab */
+#station-feeds li.et_pb_tab_3{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_share_27px.png');
+}
+#station-feeds li.et_pb_tab_3.et_pb_tab_active{
+	background-image: url('http://craol.dev/wp-content/uploads/2016/08/craol_share_dark_27px.png');
+}
+
+#station-feeds li.et_pb_tab_active{
+	background-color: #ffffff !important;
+}
+
+/* = Single Event
+------------------------------------------------------- */
+
+#event-info{
+	margin-top: -140px;
+}
+
+.et_parralx
+
+#event-meta .event-date h4{
+	text-transform: uppercase;
+}
+
+#event-blurb{
+	margin-bottom: 0px;
+}
+
+#event-blurb p{
+	font-size: inherit !important;
+	line-height: inherit;		
+}
+
+#event-map{
+	margin-bottom: 0px;
+}
+
+/* Fix event card title*/
+.article-card__content h2 a{
+	line-height: 1em !important;
+}
+
+/*atc style override */
+.atc-style-blue .atcb-link, .atc-style-blue .atcb-link:hover, .atc-style-blue .atcb-link:active, .atc-style-blue .atcb-link:focus {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: inherit;
+    text-decoration: underline;
+    outline: none;
+    line-height: 20px;
+    vertical-align: middle;
+    background: none;
+    box-shadow: none;
+    zoom: 1;
+}

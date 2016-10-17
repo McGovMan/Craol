@@ -1,0 +1,40 @@
+/* GLOBAL STYLES
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+body{
+	background: #f1f1f1;
+}
+
+/**********************************
+		WELCOME UNIT STYLES
+**********************************/
+.jumbotron{
+	background: url(../img/welcome-bg.jpg);
+	background-size: cover;
+}
+
+
+
+/* SECTION STYLES
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+.section-card{
+	border: 1px solid #ccc;
+	background: #fff;
+	/* START TRANSITION*/
+	transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.section-card:hover{
+	background: #faa91c;
+	color: #fff;
+}
+
+/* LATEST POST
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+.latest-post{
+	background: #ffffff;
+}
+
+.latest-tweets{
+	
+}
